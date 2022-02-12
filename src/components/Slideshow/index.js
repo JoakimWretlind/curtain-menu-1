@@ -2,9 +2,11 @@ import React, { useRef, useState, useEffect } from "react";
 import gsap from "gsap";
 import { Plane, useCurtains } from "react-curtains";
 import { vertexShader, fragmentShader } from "../shaders/shaders";
-
-import "./index.css";
-import { Span } from "./index.style";
+// import "./index.css";
+import { Span } from "./slideshow.style";
+import pic1 from '../images/pic-1.jpg'
+import pic2 from '../images/pic-2.jpg'
+import pic3 from '../images/pic-3.jpg'
 
 function Slideshow() {
     const [plane, setPlane] = useState(null);
@@ -122,10 +124,9 @@ function Slideshow() {
                     data-sampler="displacement"
                     alt=""
                 />
-                <img src="https://unsplash.it/1920/1080?random=1" alt="" />
-                <img src="https://unsplash.it/1920/1080?random=2" alt="" />
-                <img src="https://unsplash.it/1920/1080?random=3" alt="" />
-                <img src="https://unsplash.it/1920/1080?random=4" alt="" />
+                <img src={pic1} alt="" />
+                <img src={pic2} alt="" />
+                <img src={pic3} alt="" />
             </div>
         </Plane>
     );

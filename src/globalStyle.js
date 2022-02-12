@@ -25,6 +25,8 @@ export const GlobalStyle = createGlobalStyle`
     ul, li {
       list-style: none;
     }
+
+    // For the models animation
     .curtains-canvas {
       position: fixed;
       top: 0;
@@ -33,5 +35,26 @@ export const GlobalStyle = createGlobalStyle`
       height: 100vh;
       z-index: 1;
       pointer-events: none;
+}
+.Slideshow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+
+  cursor: pointer;
+  font-size: 3em;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.Slideshow img {
+  display: none;
 }
 `;
